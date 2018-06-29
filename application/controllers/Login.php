@@ -15,7 +15,8 @@ class Login extends CI_Controller {
 	
 	public function Access(){
 		
-		$user = $this->input->post('usuario');
+		
+		/*$user = $this->input->post('usuario');
 		$key = $this->input->post('clave');
 		
 		$res = $this->momlogin->Accesofull($user, $key);	
@@ -23,8 +24,10 @@ class Login extends CI_Controller {
 		if($res == 1){
 			$this->load->view('panel');
 		} else {
-			$this->load->view('login');
-		}		
+			$data['mensaje']= "usuario o contraseña erronea";
+			$this->load->view('login', $data);
+		}*/
+		
 	}
 	
 	
